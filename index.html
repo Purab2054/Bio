@@ -3,134 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Purab Kharchane | Portfolio</title>
+<title>Purab Kharchane</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Segoe UI', sans-serif;
 }
 
 body{
+    background: linear-gradient(135deg,#141e30,#243b55);
     height:100vh;
-    background: linear-gradient(-45deg,#0f2027,#203a43,#2c5364,#1c92d2);
-    background-size:400% 400%;
-    animation: gradient 10s ease infinite;
     color:white;
-}
-
-@keyframes gradient{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
+    overflow-x:hidden;
 }
 
 .container{
     max-width:1100px;
     margin:auto;
-    padding:40px 20px;
+    padding:60px 20px;
 }
 
 .hero{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
-    margin-bottom:60px;
-}
-
-.hero-text h1{
-    font-size:48px;
-    letter-spacing:2px;
-}
-
-.hero-text h3{
-    margin-top:10px;
-    color:#00ffd5;
-}
-
-.hero-text p{
-    margin-top:15px;
-    max-width:500px;
-    opacity:0.85;
+    text-align:center;
+    margin-bottom:70px;
 }
 
 .hero img{
-    width:280px;
-    height:280px;
+    width:220px;
+    height:220px;
+    border-radius:50%;
     object-fit:cover;
-    border-radius:25px;
-    box-shadow:0 25px 50px rgba(0,0,0,0.5);
+    border:4px solid rgba(255,255,255,0.2);
+    box-shadow:0 25px 60px rgba(0,0,0,0.6);
     transition:0.5s;
 }
 
 .hero img:hover{
-    transform:scale(1.07) rotate(1deg);
+    transform:scale(1.08);
 }
 
-.section{
-    margin-top:40px;
+.hero h1{
+    font-size:52px;
+    margin-top:25px;
+    letter-spacing:3px;
+    font-weight:700;
 }
 
-.section h2{
-    margin-bottom:20px;
-    border-left:6px solid #00ffd5;
-    padding-left:12px;
+.hero h3{
+    margin-top:10px;
+    font-weight:300;
+    opacity:0.8;
+    color:#00f2ff;
 }
 
 .card{
-    background: rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.08);
     backdrop-filter: blur(15px);
-    padding:25px;
     border-radius:20px;
-    margin-bottom:20px;
+    padding:30px;
+    margin-bottom:30px;
     transition:0.4s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:translateY(-6px);
     box-shadow:0 20px 40px rgba(0,0,0,0.4);
 }
 
-ul{
-    list-style:none;
+.card h2{
+    margin-bottom:15px;
+    font-weight:500;
+    color:#00f2ff;
 }
 
-ul li{
-    margin-bottom:10px;
+.info{
+    line-height:28px;
+    font-size:18px;
+    opacity:0.9;
 }
 
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-    gap:15px;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
 }
 
 .gallery img{
     width:100%;
-    border-radius:15px;
+    border-radius:20px;
     transition:0.4s;
 }
 
 .gallery img:hover{
-    transform:scale(1.08);
+    transform:scale(1.07);
 }
 
 footer{
     text-align:center;
     margin-top:50px;
-    opacity:0.7;
+    opacity:0.6;
+    font-size:14px;
 }
 
 @media(max-width:768px){
-    .hero{
-        flex-direction:column;
-        text-align:center;
-    }
-    .hero img{
-        margin-top:30px;
+    .hero h1{
+        font-size:38px;
     }
 }
 </style>
@@ -140,49 +120,42 @@ footer{
 
 <div class="container">
 
-    <!-- HERO -->
+    <!-- HERO SECTION -->
     <div class="hero">
-        <div class="hero-text">
-            <h1>Purab Kharchane</h1>
-            <h3>Business Development Associate</h3>
-            <p>Computer Engineer passionate about business growth, client handling and strategic expansion.</p>
-        </div>
-        <img src="https://i.ibb.co/k6c4DfDL/Whats-App-Image-2026-02-28-at-10-06-53-AM.jpg" alt="Purab">
+        <img src="https://i.ibb.co/k6c4DfDL/Whats-App-Image-2026-02-28-at-10-06-53-AM.jpg">
+        <h1>Purab Kharchane</h1>
+        <h3>Business Development Associate</h3>
     </div>
 
-    <!-- Contact -->
-    <div class="section">
-        <h2>Contact Information</h2>
-        <div class="card">
+    <!-- ABOUT -->
+    <div class="card">
+        <h2>About</h2>
+        <div class="info">
+            Computer Engineer by qualification, currently working as a Business Development Associate. 
+            Focused on professional growth, strong communication and long-term business relationships.
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="card">
+        <h2>Contact</h2>
+        <div class="info">
             📞 6264354424 <br>
             📍 Dabhiya Kheda, Nepanager (M.P) <br>
             🎂 01/10/2000
         </div>
     </div>
 
-    <!-- Education -->
-    <div class="section">
+    <!-- EDUCATION -->
+    <div class="card">
         <h2>Education</h2>
-        <div class="card">
-            🎓 Computer Engineer
+        <div class="info">
+            🎓 Computer Engineering Graduate
         </div>
     </div>
 
-    <!-- Skills -->
-    <div class="section">
-        <h2>Skills</h2>
-        <div class="card">
-            <ul>
-                <li>✔ Business Development</li>
-                <li>✔ Client Handling</li>
-                <li>✔ Excel & SQL</li>
-                <li>✔ Communication & Coordination</li>
-            </ul>
-        </div>
-    </div>
-
-    <!-- Gallery -->
-    <div class="section">
+    <!-- GALLERY -->
+    <div class="card">
         <h2>Gallery</h2>
         <div class="gallery">
             <img src="https://i.ibb.co/4Q9vhhM/Whats-App-Image-2026-02-28-at-10-06-54-AM.jpg">
@@ -193,7 +166,7 @@ footer{
     </div>
 
     <footer>
-        © 2026 Purab Kharchane | Personal Website
+        © 2026 Purab Kharchane
     </footer>
 
 </div>
