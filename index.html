@@ -41,7 +41,7 @@
         font-weight: normal;
     }
     .section {
-        margin-top: 80px; /* so photo doesn't overlap */
+        margin-top: 80px;
     }
     .section h2 {
         border-bottom: 2px solid #4CAF50;
@@ -63,12 +63,25 @@
     ul {
         padding-left: 20px;
     }
+    /* Gallery styling */
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .gallery img {
+        width: calc(25% - 10px);
+        border-radius: 10px;
+        object-fit: cover;
+        border: 2px solid #4CAF50;
+    }
 </style>
 </head>
 <body>
 <div class="container">
-    <!-- Photo -->
-    <img src="https://i.ibb.co/FbjWMzsp" alt="Purab Kharchane" class="photo">
+    <!-- Main Photo -->
+    <img src="https://i.ibb.co/k6c4DfDL/Whats-App-Image-2026-02-28-at-10-06-53-AM.jpg" alt="Purab Kharchane" class="photo">
 
     <!-- Header -->
     <h1>Purab Kharchane</h1>
@@ -127,6 +140,21 @@
             <li>Hindi</li>
         </ul>
     </div>
+
+    <!-- Optional Gallery of Photos -->
+    <div class="section">
+        <h2>Photos</h2>
+        <div class="gallery">
+            <img src="https://i.ibb.co/4Q9vhhM/Whats-App-Image-2026-02-28-at-10-06-54-AM.jpg" alt="Photo2">
+            <img src="https://i.ibb.co/5ghqDyJ0/Whats-App-Image-2026-02-28-at-10-07-43-AM.jpg" alt="Photo3">
+            <img src="https://i.ibb.co/N2SPnJBd/Whats-App-Image-2026-02-28-at-10-08-14-AM.jpg" alt="Photo4">
+            <img src="https://i.ibb.co/PZGrCx07/Whats-App-Image-2026-02-28-at-10-14-18-AM.jpg" alt="Photo5">
+            <img src="https://i.ibb.co/xSRs06mZ/Whats-App-Image-2026-02-28-at-10-23-43-AM.jpg" alt="Photo6">
+            <img src="https://i.ibb.co/Cp4kpb1n/Whats-App-Image-2026-02-28-at-10-25-33-AM.jpg" alt="Photo7">
+            <img src="https://i.ibb.co/vxcrTRG9/Whats-App-Image-2026-02-28-at-10-25-39-AM.jpg" alt="Photo8">
+        </div>
+    </div>
+
 </div>
 </body>
 </html>
